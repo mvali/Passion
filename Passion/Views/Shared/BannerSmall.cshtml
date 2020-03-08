@@ -1,0 +1,51 @@
+﻿<!-- banner -->
+<div class="agile-ipage-banner  banner-w3layouts">
+    <!-- banner-info -->
+    <div class="banner-agileinfo">
+        <div class="container">
+            <div class="w3header">
+                <!--header-->
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1><a href="~/">@Resources.Banner.Passion</a></h1>
+                    </div>
+                    <!-- navbar-header -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="~/">@Resources.Banner.Home</a></li>
+                            <li><a @Html.Raw(Utils.ControlerViewIs("Home", "About", ViewContext) ? "class=\"active\"" : "") href="@Url.Action("About", "Home")">@Resources.Banner.About</a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a @Html.Raw(Utils.ControlerViewIs("Home", "Icons", ViewContext) ? "class=\"active\"" : "") href="@Url.Action("Icons", "Home")">@Resources.Banner.Icons</a></li>
+                                    <li>@Html.ActionLink(@Resources.Banner.Typography, "Codes", "Home", new { @class= Utils.ControlerViewIs("Home", "Icons", ViewContext) ? "class=\"active\"" : "" })</li>
+                                </ul>
+                            </li>
+                            <li><a @Html.Raw(Utils.ControlerViewIs("Home", "Portfolio", ViewContext) ? "class=\"active\"" : "") href="@Url.Action("Portfolio", "Home")">@Resources.Banner.Portfolio</a></li>
+                            <li><a @Html.Raw(Utils.ControlerViewIs("Contact", "Index", ViewContext) ? "class=\"active\"" : "") href="@Url.Action("Index", "Contact")">@Resources.Banner.Contact</a></li>
+                        </ul>
+                        <div class="clearfix"> </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- //header -->
+            <div class="banner-w3text-inner">
+                <h2 class="text-center">photograpghy</h2>
+                <div class="col-sm-4 col-xs-4 w3_agile-line1"><span></span></div>
+                <div class="col-sm-4  col-xs-4 banner-w3text-title text-center">
+                    <p>my passion</p>
+                </div>
+                <div class="col-sm-4  col-xs-4 w3_agile-line2"><span></span></div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- //banner-info -->
+    </div>
+</div>
+<!-- //banner -->

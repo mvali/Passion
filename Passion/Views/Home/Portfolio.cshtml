@@ -1,0 +1,118 @@
+﻿@section css {
+    <link href="@Url.Content("~/Assets/Css/swipebox.css")" rel="stylesheet" />
+}
+@section js {
+    <script src="@Url.Content("~/Assets/Scripts/jquery.filterizr.js")"></script>
+    <script src="@Url.Content("~/Assets/Scripts/controls.js")"></script>
+    <script src="@Url.Content("~/Assets/Scripts/jquery.swipebox.min.js")"></script>
+    <script src="@Url.Content("~/Assets/Scripts/portfolio.js")"></script>
+}
+@Html.Partial("BannerSmall")
+<!-- portfolio -->
+<div id="portfolio" class="w3ls-section services portfolio">
+    <div class="container">
+        <h3 class="agileits-title">my Portfolio</h3>
+        <div class="gallery_gds">
+            <ul class="simplefilter">
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">Category 1</li>
+                <li data-filter="2">Category 2</li>
+                <li data-filter="3">Category 3</li>
+            </ul>
+            <div class="filtr-container">
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Busy streets">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                            <img class="img-responsive " src="~/Assets/images/g1.jpg" alt="" />
+                            <div class="wthree-pcatn">
+                                <h4>Motion Pictures</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="Luminous night">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
+                            <img src="~/Assets/images/g2.jpg" alt="" class="img-responsive" />
+                            <div class="wthree-pcatn">
+                                <h4>Motion Pictures</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="1" data-sort="City wonders">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g3.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                            <img src="~/Assets/images/g3.jpg" alt="" class="img-responsive" />
+                            <div class="wthree-pcatn">
+                                <h4>Motion Pictures</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="2" data-sort="Industrial site">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g4.jpg" class="swipebox" title="Praesent non purus fermentum, eleifend velit non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis.">
+                            <img src="~/Assets/images/g4.jpg" alt="" class="img-responsive " />
+                            <div class="wthree-pcatn">
+                                <h4>Event flicks</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="2" data-sort="In production">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g5.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                            <img src="~/Assets/images/g5.jpg" alt="" class="img-responsive" />
+                            <div class="wthree-pcatn">
+                                <h4>Event flicks</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="2" data-sort="Peaceful lake">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g6.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+                            <img src="~/Assets/images/g6.jpg" alt="" class="img-responsive" />
+                            <div class="wthree-pcatn">
+                                <h4>Event flicks</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="3" data-sort="Peaceful lake">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g7.jpg" class="swipebox" title="Eleifend velit non duis maximus tortor diam, ac lobortis justo rutrum quis, praesent non purus fermentum. ">
+                            <img src="~/Assets/images/g7.jpg" alt="" class="img-responsive" />
+                            <div class="wthree-pcatn">
+                                <h4>Wedding bells</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="3" data-sort="Peaceful lake">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g8.jpg" class="swipebox" title="Praesent non purus fermentum, eleifend velit non, Duis maximus tortor diam, ac lobortis justo rutrum quis.">
+                            <img src="~/Assets/images/g8.jpg" alt="" class="img-responsive" />
+                            <div class="wthree-pcatn">
+                                <h4>Wedding bells</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 filtr-item" data-category="3" data-sort="Peaceful lake">
+                    <div class="agileits-img">
+                        <a href="~/Assets/images/g9.jpg" class="swipebox" title="Ac lobortis justo rutrum quis. Praesent non purus fermentum, duis maximus tortor diam, eleifend velit non">
+                            <img src="~/Assets/images/g9.jpg" alt="" class="img-responsive" />
+                            <div class="wthree-pcatn">
+                                <h4>Wedding bells</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //portfolio -->

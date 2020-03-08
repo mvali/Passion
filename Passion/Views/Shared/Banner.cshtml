@@ -1,0 +1,72 @@
+﻿<!-- banner -->
+<div class="banner-w3layouts">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <div class="banner-w3text banner-img1">
+                    <h4>@Resources.Banner.Img1Text</h4>
+                </div>
+            </li>
+            <li>
+                <div class="banner-w3text banner-img2">
+                    <h4>@Resources.Banner.Img2Text</h4>
+                </div>
+            </li>
+            <li>
+                <div class="banner-w3text banner-img3">
+                    <h4>@Resources.Banner.Img3Text</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- FlexSlider -->
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+			$(window).load(function () {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function (slider) {
+						$('body').removeClass('loading');
+					}
+				});
+			});
+    </script>
+    <!-- //FlexSlider -->
+    <!-- banner-info -->
+    <div class="banner-agileinfo">
+        <div class="container">
+            <div class="w3header">
+                <!--header-->
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">@Resources.Banner.ToggleNav</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1><a href="~/">@Resources.Banner.Passion</a></h1>
+                    </div>
+                    <!-- navbar-header -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="~/" class="active">@Resources.Banner.Home</a></li>
+                            <li><a href="@Url.Action("About", "Home")">@Resources.Banner.About</a></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@Resources.Banner.Pages <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="@Url.Action("Icons", "Home")">@Resources.Banner.Icons</a></li>
+                                    <li>@Html.ActionLink(@Resources.Banner.Typography, "Codes", "Home")</li>
+                                </ul>
+                            </li>
+                            <li><a href="@Url.Action("Portfolio", "Home")">@Resources.Banner.Portfolio</a></li>
+                            <li><a href="@Url.Action("Index", "Contact")">@Resources.Banner.Contact</a></li>
+                        </ul>
+                        <div class="clearfix"> </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //banner -->
