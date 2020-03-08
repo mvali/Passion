@@ -1,5 +1,6 @@
 # Passion
-Photography template
+Photography template website
+
 Link: http://mvali.forithost.com/passion/
 
 Programmed in C#, MVC architecture
